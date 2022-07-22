@@ -24,9 +24,12 @@ jobs:
               with:
                 python-version: ${{ matrix.python-version }}
 
-            - name: pip install this package
-              run: |
+            - name: show package versions for debug
                   pip3 freeze
                   pip3 show setuptools
                   pip3 --version
+
+            - name: pip install this package
+              run: |
+                  pip3 install scikit-build
                   pip3 install -e .
