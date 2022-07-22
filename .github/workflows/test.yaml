@@ -32,5 +32,6 @@ jobs:
 
             - name: pip install this package
               run: |
+                  sudo apt install cmake
                   pip3 install scikit-build
                   pip3 install -e .
