@@ -25,6 +25,7 @@ jobs:
                 python-version: ${{ matrix.python-version }}
 
             - name: show package versions for debug
+              run: |
                   pip3 freeze
                   pip3 show setuptools
                   pip3 --version
