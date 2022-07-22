@@ -26,4 +26,7 @@ jobs:
 
             - name: pip install this package
               run: |
+                  pip3 freeze
+                  pip3 show setuptools
+                  pip3 --version
                   pip3 install -e .
